@@ -17,7 +17,7 @@ from sklearn.pipeline import make_pipeline # use for combining all prerocessors 
 
 phish_data = pd.read_csv('../phishing_site_urls.csv')
 tokenizer = RegexpTokenizer(r'[A-Za-z]+')#to getting alpha only
-phish_data['text_tokenized'] = phish_data.URL.map(lambda t: tokenizer.tokenize(t)) # doing with all rows
+phish_data['text_tokenized'] = phish_data.URL.map(lambda t: tokenizer.tokenize(t)) 
 
 stemmer = SnowballStemmer("english") # choose a language
 phish_data['text_stemmed'] = phish_data['text_tokenized'].map(lambda l: [stemmer.stem(word) for word in l])
