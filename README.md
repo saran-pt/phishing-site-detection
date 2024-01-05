@@ -17,5 +17,5 @@ The dataset is split into 80-20 for training and testing. This project focuses o
 - LogisticRegression
 - MultinomialNB
 
-All models are trained and evaluated against the test dataset. For detailed model training, refer to [PhishingWebsiteDetection.ipynb](https://colab.research.google.com/drive/1PutgNcdOvkbdympVyd-AYMqf7riHGjA-?usp=sharing).
+All models are trained and evaluated against the test dataset.
 
